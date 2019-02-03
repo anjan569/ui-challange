@@ -9,7 +9,7 @@ Prerequisite
 [Node JS](https://nodejs.org/en/). 
 Steps:
 ```
-git+https://github.com/mcmakler/ui-challange.git
+git+https://github.com/anjan569/ui-challange.git
 cd ui-challenge
 yarn
 yarn serve
@@ -17,3 +17,7 @@ yarn serve
 This repo uses [parceljs](https://parceljs.org/) and contains support for [SCSS](https://sass-lang.com/)
 - You are free to use any framework/pre-processor.
 - Use icons/assets wherever required.
+
+--------------------------------------------------------------------------------------
+
+Created all three screens using HTML and CSS only.
