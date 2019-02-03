@@ -1,0 +1,384 @@
+$font-stack: Roboto;
+$primary-color: #fff;
+$subheader-color: #aaa;
+$header-color:#000;
+$border-color:#dadada;
+$button_primary-color:#feb901;
+
+
+* {box-sizing: border-box;}
+*{font-family: $font-stack}
+.header-category {
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    background-color:$primary-color;
+    border-bottom: 1px solid $border-color;
+    position: relative;
+    height: 80px;
+    padding: 0 20px;
+  }
+  
+ .logo-image {
+    height: 100%;
+}
+
+.logo-div{
+    display: block;
+    max-height: 50px;
+}
+
+.phone-number {
+    text-decoration: underline;
+}
+
+.separator {
+    background-color: $border-color;
+    display: none;
+    height: 20px;
+    width: 1px;
+}
+
+
+
+.widget {
+    box-shadow: 0 4px 15px rgba(0,0,0,.14);
+    margin: auto;
+    max-width: 768px;
+    min-height: 530px;
+}
+
+// .widget {
+//     position: relative;
+//     padding: 20px;
+//     border-bottom: 1px solid #e6e6e6;
+//     color: #000;
+//     min-height: 60px;
+//     text-align: center;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     box-sizing: border-box;
+//     flex-direction: column;
+// }
+
+.widget-subtitle {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+    align-items:center;
+    padding-bottom: 40px;   
+    border-bottom: 1px solid $border-color;
+
+}
+
+.fa-icon {
+    background: $border-color;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    text-align: center;}
+
+.fa-icon {
+	font-size: 15px;
+    line-height: 38px;
+}
+
+h2{
+    line-height: 10px;
+}
+
+.button {
+    align-items: center;
+    appearance: none;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    font-size: inherit;
+    font-weight: 500;
+    justify-content: center;
+    min-height: 40px;
+    outline: none;
+    overflow: hidden;
+    padding: 0 40px;
+    position: relative;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+li {
+border-bottom: 1px solid $border-color;
+}
+
+li:last-child {
+border: none;
+}
+
+li div:hover {
+background: #f6f6f6;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column1 {
+    width: 30px;
+  
+  }
+  .column2 {
+    width: 38 px;
+  
+  }
+  .column3 {
+    width: 80%;
+  
+  }
+  .column3-sub {
+    width:130px;
+  
+  }
+ 
+  .column4 {
+    width: 40px;
+  
+  }
+  .column5 {
+    width: 15px;
+  }
+ul li div{
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    background-color: $primary-color;
+    position: relative;
+    height: 60px;
+    padding: 0 20px;
+    align-content: space-around;
+}
+
+
+.label:after {
+    color:$subheader-color;
+    text-align: left;
+   
+  }
+
+  .secondary-label{
+    color: $subheader-color;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+
+.button-primary{
+    background-color:$button_primary-color;
+    color: $primary-color;
+} 
+
+.card-item{
+    margin-top: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.card-item img{
+    display: block;
+    max-width: 125px;
+    max-height: 125px;
+    padding-right: 10px;
+}
+.subtitle{
+    color: $subheader-color;
+}
+
+.form-details{
+    display: flex;
+    flex-direction: row;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+	padding: 0px;
+    font: 10px Arial, Helvetica, sans-serif;
+    
+}
+.form-details .from-label{
+	display: block;
+}
+.form-details label > span{
+    width: 180px;
+    font-size: 11px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+    padding-right: 5px;
+    color:$subheader-color;
+}
+
+.form-details .form-value {
+	width: 180px;
+    color: $header-color !important;
+    font-weight: bold;
+    float: left;
+    font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+   
+    .logo-div {
+        max-height: 35px;
+    }
+
+    .logo-image {
+        width: 140px;
+    }
+    .phone-label {
+        display: none;
+    }
+    .label:after {
+        content: '\A';
+        white-space: pre;
+    }
+    .form-details{
+        max-width: 100%;
+    }
+
+    .form-details .from-label{
+        display: block;
+        max-width: 180px;
+    }
+    .form-details label > span{
+        font-size: 14px;
+        font-weight: bold;
+        padding-top: 12px;
+        padding-right: 5px;
+    }
+    
+    .form-details .form-value {
+        
+        font-size: 14px;
+    }
+
+
+    .card-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-item img {
+        max-width: 40%;
+        max-height: 10%;
+        
+    }
+    .button {
+        margin-top: 15px;
+        max-width: 39%;
+    }
+
+    .fa-icon {
+        background: $border-color;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        text-align: center;}
+    
+    .fa-icon {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+      .column3-sub {
+        width:100%;   
+      }
+      .secondary-label{
+        padding-left: 0px;
+      }
+   
+}
+
+@media (max-width: 1280px) {
+   
+}
+
+
+@media (max-width:720px){
+    
+    .phone-label {
+        display: none;
+    }
+    .phone-number{
+        display: none;
+    }
+    .card-item img {
+        max-width: 100%;
+        
+    }
+    .button {
+        margin-top: 15px;
+        max-width: 100%;
+    }
+    .column2 {
+        display: none;
+    }
+    .column3 {
+        width: 60%;
+    }
+    .form-details{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secondary-label{
+        padding-left: 0px;
+        display: inline-block;
+        width: 180px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+      }
+}
+
+@media (max-width:400px){
+    .widget-subtitle h2{
+        padding: 20px;
+        line-height: normal;
+
+    }
+    .subtitle{
+        padding: 20px;
+    }
+    .hide-mobile{
+        display: none;
+    }
+    .phone-label {
+        display: none;
+    }
+    .phone-number{
+        display: none;
+    }
+
+    .column2 {
+        display: none;
+    }
+    .column3 {
+        width: 60%;
+    }
+    .secondary-label{
+        padding-left: 0px;
+        display: inline-block;
+        width: 180px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+      }
+}
