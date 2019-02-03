@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mcmakler/ui-challange.git"
+    "url": "git+https://github.com/anjan569/ui-challange.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mcmakler/ui-challange/issues"
+    "url": "https://github.com/anjan569/ui-challange/issues"
   },
-  "homepage": "https://github.com/mcmakler/ui-challange#readme",
+  "homepage": "https://github.com/anjan569/ui-challange#readme",
   "devDependencies": {
     "node-sass": "^4.9.0",
     "parcel": "^1.9.4"
